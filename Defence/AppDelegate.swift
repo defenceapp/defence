@@ -1,26 +1,17 @@
-//
-//  AppDelegate.swift
-//  Defence
-//
-//  Created by Calum Maciver on 2018-12-19.
-//  Copyright © 2018 Calum Maciver. All rights reserved.
-//
-
 import Cocoa
-
+import StoreKit
+import Foundation
+import SafariServices
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-
-
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
+        BlockListUpdater.syncBlockerList()
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
     }
-
-
 }
 

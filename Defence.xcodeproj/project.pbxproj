@@ -13,6 +13,15 @@
 		A1AD609321CAC07400DD8B62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1AD609121CAC07400DD8B62 /* Main.storyboard */; };
 		A1AD609F21CAC07400DD8B62 /* DefenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AD609E21CAC07400DD8B62 /* DefenceTests.swift */; };
 		A1AD60AA21CAC07400DD8B62 /* DefenceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AD60A921CAC07400DD8B62 /* DefenceUITests.swift */; };
+		A1AD60D921CAC4E300DD8B62 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1AD60BD21CAC0B000DD8B62 /* Cocoa.framework */; };
+		A1AD60DE21CAC4E300DD8B62 /* ContentBlockerRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AD60DD21CAC4E300DD8B62 /* ContentBlockerRequestHandler.swift */; };
+		A1AD60E321CAC4E300DD8B62 /* ContentBlocker.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A1AD60D821CAC4E300DD8B62 /* ContentBlocker.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A1AD60EC21D4524E00DD8B62 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1AD60EB21D4524E00DD8B62 /* StoreKit.framework */; };
+		A1AD60F021D477ED00DD8B62 /* IAPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AD60EF21D477ED00DD8B62 /* IAPManager.swift */; };
+		A1AD60F221D4817900DD8B62 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AD60F121D4817900DD8B62 /* Constants.swift */; };
+		A1AD60F321D57FAE00DD8B62 /* blockerList.json in Resources */ = {isa = PBXBuildFile; fileRef = A1AD60DB21CAC4E300DD8B62 /* blockerList.json */; };
+		A1AD60F521D5B54900DD8B62 /* blockerList.json in Resources */ = {isa = PBXBuildFile; fileRef = A1AD60F421D5B54900DD8B62 /* blockerList.json */; };
+		A1AD60F721D5BE2A00DD8B62 /* BlockListUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AD60F621D5BE2A00DD8B62 /* BlockListUpdater.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +39,28 @@
 			remoteGlobalIDString = A1AD608721CAC07200DD8B62;
 			remoteInfo = Defence;
 		};
+		A1AD60E121CAC4E300DD8B62 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1AD608021CAC07200DD8B62 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1AD60D721CAC4E300DD8B62;
+			remoteInfo = ContentBlocker;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A1AD60D321CAC0B000DD8B62 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A1AD60E321CAC4E300DD8B62 /* ContentBlocker.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A1AD608821CAC07200DD8B62 /* Defence.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Defence.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +76,17 @@
 		A1AD60A521CAC07400DD8B62 /* DefenceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DefenceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1AD60A921CAC07400DD8B62 /* DefenceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefenceUITests.swift; sourceTree = "<group>"; };
 		A1AD60AB21CAC07400DD8B62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1AD60BD21CAC0B000DD8B62 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		A1AD60D821CAC4E300DD8B62 /* ContentBlocker.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ContentBlocker.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1AD60DB21CAC4E300DD8B62 /* blockerList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = blockerList.json; sourceTree = "<group>"; };
+		A1AD60DD21CAC4E300DD8B62 /* ContentBlockerRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentBlockerRequestHandler.swift; sourceTree = "<group>"; };
+		A1AD60DF21CAC4E300DD8B62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1AD60E021CAC4E300DD8B62 /* ContentBlocker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ContentBlocker.entitlements; sourceTree = "<group>"; };
+		A1AD60EB21D4524E00DD8B62 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		A1AD60EF21D477ED00DD8B62 /* IAPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPManager.swift; sourceTree = "<group>"; };
+		A1AD60F121D4817900DD8B62 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A1AD60F421D5B54900DD8B62 /* blockerList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = blockerList.json; sourceTree = "<group>"; };
+		A1AD60F621D5BE2A00DD8B62 /* BlockListUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockListUpdater.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1AD60EC21D4524E00DD8B62 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +112,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A1AD60D521CAC4E300DD8B62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1AD60D921CAC4E300DD8B62 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -79,6 +129,8 @@
 				A1AD608A21CAC07200DD8B62 /* Defence */,
 				A1AD609D21CAC07400DD8B62 /* DefenceTests */,
 				A1AD60A821CAC07400DD8B62 /* DefenceUITests */,
+				A1AD60DA21CAC4E300DD8B62 /* ContentBlocker */,
+				A1AD60BC21CAC0B000DD8B62 /* Frameworks */,
 				A1AD608921CAC07200DD8B62 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,6 +141,7 @@
 				A1AD608821CAC07200DD8B62 /* Defence.app */,
 				A1AD609A21CAC07400DD8B62 /* DefenceTests.xctest */,
 				A1AD60A521CAC07400DD8B62 /* DefenceUITests.xctest */,
+				A1AD60D821CAC4E300DD8B62 /* ContentBlocker.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,6 +155,10 @@
 				A1AD609121CAC07400DD8B62 /* Main.storyboard */,
 				A1AD609421CAC07400DD8B62 /* Info.plist */,
 				A1AD609521CAC07400DD8B62 /* Defence.entitlements */,
+				A1AD60EF21D477ED00DD8B62 /* IAPManager.swift */,
+				A1AD60F121D4817900DD8B62 /* Constants.swift */,
+				A1AD60DB21CAC4E300DD8B62 /* blockerList.json */,
+				A1AD60F621D5BE2A00DD8B62 /* BlockListUpdater.swift */,
 			);
 			path = Defence;
 			sourceTree = "<group>";
@@ -124,6 +181,26 @@
 			path = DefenceUITests;
 			sourceTree = "<group>";
 		};
+		A1AD60BC21CAC0B000DD8B62 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1AD60EB21D4524E00DD8B62 /* StoreKit.framework */,
+				A1AD60BD21CAC0B000DD8B62 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A1AD60DA21CAC4E300DD8B62 /* ContentBlocker */ = {
+			isa = PBXGroup;
+			children = (
+				A1AD60DD21CAC4E300DD8B62 /* ContentBlockerRequestHandler.swift */,
+				A1AD60DF21CAC4E300DD8B62 /* Info.plist */,
+				A1AD60E021CAC4E300DD8B62 /* ContentBlocker.entitlements */,
+				A1AD60F421D5B54900DD8B62 /* blockerList.json */,
+			);
+			path = ContentBlocker;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,10 +211,12 @@
 				A1AD608421CAC07200DD8B62 /* Sources */,
 				A1AD608521CAC07200DD8B62 /* Frameworks */,
 				A1AD608621CAC07200DD8B62 /* Resources */,
+				A1AD60D321CAC0B000DD8B62 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A1AD60E221CAC4E300DD8B62 /* PBXTargetDependency */,
 			);
 			name = Defence;
 			productName = Defence;
@@ -180,6 +259,23 @@
 			productReference = A1AD60A521CAC07400DD8B62 /* DefenceUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		A1AD60D721CAC4E300DD8B62 /* ContentBlocker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1AD60E421CAC4E300DD8B62 /* Build configuration list for PBXNativeTarget "ContentBlocker" */;
+			buildPhases = (
+				A1AD60D421CAC4E300DD8B62 /* Sources */,
+				A1AD60D521CAC4E300DD8B62 /* Frameworks */,
+				A1AD60D621CAC4E300DD8B62 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ContentBlocker;
+			productName = ContentBlocker;
+			productReference = A1AD60D821CAC4E300DD8B62 /* ContentBlocker.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -192,6 +288,14 @@
 				TargetAttributes = {
 					A1AD608721CAC07200DD8B62 = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.Mac = {
+								enabled = 1;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
 					};
 					A1AD609921CAC07400DD8B62 = {
 						CreatedOnToolsVersion = 10.0;
@@ -200,6 +304,14 @@
 					A1AD60A421CAC07400DD8B62 = {
 						CreatedOnToolsVersion = 10.0;
 						TestTargetID = A1AD608721CAC07200DD8B62;
+					};
+					A1AD60D721CAC4E300DD8B62 = {
+						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.Mac = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -219,6 +331,7 @@
 				A1AD608721CAC07200DD8B62 /* Defence */,
 				A1AD609921CAC07400DD8B62 /* DefenceTests */,
 				A1AD60A421CAC07400DD8B62 /* DefenceUITests */,
+				A1AD60D721CAC4E300DD8B62 /* ContentBlocker */,
 			);
 		};
 /* End PBXProject section */
@@ -228,6 +341,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1AD60F321D57FAE00DD8B62 /* blockerList.json in Resources */,
 				A1AD609021CAC07400DD8B62 /* Assets.xcassets in Resources */,
 				A1AD609321CAC07400DD8B62 /* Main.storyboard in Resources */,
 			);
@@ -247,6 +361,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A1AD60D621CAC4E300DD8B62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1AD60F521D5B54900DD8B62 /* blockerList.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -254,7 +376,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1AD60F021D477ED00DD8B62 /* IAPManager.swift in Sources */,
+				A1AD60F721D5BE2A00DD8B62 /* BlockListUpdater.swift in Sources */,
 				A1AD608E21CAC07200DD8B62 /* ViewController.swift in Sources */,
+				A1AD60F221D4817900DD8B62 /* Constants.swift in Sources */,
 				A1AD608C21CAC07200DD8B62 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +400,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A1AD60D421CAC4E300DD8B62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1AD60DE21CAC4E300DD8B62 /* ContentBlockerRequestHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -287,6 +420,11 @@
 			isa = PBXTargetDependency;
 			target = A1AD608721CAC07200DD8B62 /* Defence */;
 			targetProxy = A1AD60A621CAC07400DD8B62 /* PBXContainerItemProxy */;
+		};
+		A1AD60E221CAC4E300DD8B62 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1AD60D721CAC4E300DD8B62 /* ContentBlocker */;
+			targetProxy = A1AD60E121CAC4E300DD8B62 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -306,6 +444,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -367,6 +506,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -420,17 +560,21 @@
 		A1AD60AF21CAC07400DD8B62 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Defence/Defence.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8EUMXJ6BD8;
 				INFOPLIST_FILE = Defence/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = defence.crypto.Defence;
+				PRODUCT_BUNDLE_IDENTIFIER = app.defenceblocker.defence;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
@@ -438,17 +582,21 @@
 		A1AD60B021CAC07400DD8B62 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Defence/Defence.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8EUMXJ6BD8;
 				INFOPLIST_FILE = Defence/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = defence.crypto.Defence;
+				PRODUCT_BUNDLE_IDENTIFIER = app.defenceblocker.defence;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
@@ -531,6 +679,48 @@
 			};
 			name = Release;
 		};
+		A1AD60E521CAC4E300DD8B62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ContentBlocker/ContentBlocker.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8EUMXJ6BD8;
+				INFOPLIST_FILE = ContentBlocker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.defenceblocker.defence.ContentBlocker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		A1AD60E621CAC4E300DD8B62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ContentBlocker/ContentBlocker.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8EUMXJ6BD8;
+				INFOPLIST_FILE = ContentBlocker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.defenceblocker.defence.ContentBlocker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -566,6 +756,15 @@
 			buildConfigurations = (
 				A1AD60B521CAC07400DD8B62 /* Debug */,
 				A1AD60B621CAC07400DD8B62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1AD60E421CAC4E300DD8B62 /* Build configuration list for PBXNativeTarget "ContentBlocker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1AD60E521CAC4E300DD8B62 /* Debug */,
+				A1AD60E621CAC4E300DD8B62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

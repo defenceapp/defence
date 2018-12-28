@@ -1,11 +1,3 @@
-//
-//  DefenceTests.swift
-//  DefenceTests
-//
-//  Created by Calum Maciver on 2018-12-19.
-//  Copyright © 2018 Calum Maciver. All rights reserved.
-//
-
 import XCTest
 @testable import Defence
 

@@ -1,11 +1,3 @@
-//
-//  DefenceUITests.swift
-//  DefenceUITests
-//
-//  Created by Calum Maciver on 2018-12-19.
-//  Copyright © 2018 Calum Maciver. All rights reserved.
-//
-
 import XCTest
 
 class DefenceUITests: XCTestCase {

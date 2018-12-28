@@ -4,10 +4,43 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>ContentBlocker.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>Defence.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>A1AD608721CAC07200DD8B62</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A1AD609921CAC07400DD8B62</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A1AD60A421CAC07400DD8B62</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A1AD60BA21CAC0B000DD8B62</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A1AD60D721CAC4E300DD8B62</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
